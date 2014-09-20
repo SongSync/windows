@@ -1,2 +1,2 @@
-windows
+SongSync Windows Phone App
 =======
