@@ -6,30 +6,59 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#FF38D6B2">
 
-  
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent" Height="640" Margin="0,0.333,0,-0.333" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock HorizontalAlignment="Left" 
-                   Margin="109,10,0,0" 
+
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="49.446,10,0,0" 
                    TextWrapping="Wrap" 
                    Text="SongSync" 
                    VerticalAlignment="Top" 
                    Height="46" 
-                   Width="195" SelectionChanged="TextBlock_SelectionChanged" FontSize="40"/>
-            <TextBlock x:Name="txtOut" TextWrapping="Wrap"></TextBlock>
-            <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="TextBoxPageName" Width="150" TextChanged="TextBoxPageName_TextChanged">
-            
-            </StackPanel>
-            <ProgressBar Name="ProgressBarRequest" IsIndeterminate="True" Visibility="Collapsed"></ProgressBar>
-        </StackPanel>
+                   Width="206" 
+                   SelectionChanged="TextBlock_SelectionChanged" 
+                   FontSize="40" Foreground="#FFFFFBFB" Grid.RowSpan="2" Grid.Column="1"/>
+        <HyperlinkButton Content="About SongSync Team" HorizontalAlignment="Left" Margin="25.446,581,0,0" Grid.Row="1" VerticalAlignment="Top" Click="HyperlinkButton_Click" Foreground="#FFFDF9F9" FontSize="25" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="36,321,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="36.446,410,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" TextChanged="TextBox_TextChanged_1" FontFamily="Global User Interface" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" 
+        	Margin="49.446,10,0,0" 
+        	TextWrapping="Wrap" 
+        	Text="SongSync" 
+        	VerticalAlignment="Top" 
+        	Height="46" 
+        	Width="206" 
+        	SelectionChanged="TextBlock_SelectionChanged" 
+        	FontSize="40" Foreground="#FFFFFBFB" Grid.RowSpan="2" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" 
+        	Margin="36.446,288,0,0" 
+        	TextWrapping="Wrap" 
+        	Text="Username" 
+        	VerticalAlignment="Top" 
+        	Height="28" 
+        	Width="98" 
+        	SelectionChanged="TextBlock_SelectionChanged" 
+        	FontSize="20" Foreground="#FFFFFBFB" Grid.RowSpan="2" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" 
+        	Margin="36.446,382,0,0" 
+        	TextWrapping="Wrap" 
+        	Text="Password" 
+        	VerticalAlignment="Top" 
+        	Height="28" 
+        	Width="86" 
+        	SelectionChanged="TextBlock_SelectionChanged" 
+        	FontSize="20" Foreground="#FFFFFBFB" Grid.RowSpan="2" Grid.Column="1"/>
+        <Button Content="Sign In" HorizontalAlignment="Left" Margin="88.446,461,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Global User Interface" Grid.Column="1"/>
     </Grid>
 </Page>
