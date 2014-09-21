@@ -1,3 +1,4 @@
-SongSync Windows Phone App
-=======
+# SongSync Windows Phone App
+
 The Windows Phone App for SongSync
+
